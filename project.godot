@@ -1,0 +1,64 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "HumanBody",
+"language": "GDScript",
+"path": "res://core/unit/movement/human/HumanBody.gd"
+}, {
+"base": "Unit",
+"class": "Movement",
+"language": "GDScript",
+"path": "res://core/unit/movement/Movement.gd"
+}, {
+"base": "TileMap",
+"class": "MultiMap",
+"language": "GDScript",
+"path": "res://core/map/MultiMap.gd"
+}, {
+"base": "Movement",
+"class": "Player",
+"language": "GDScript",
+"path": "res://core/unit/movement/human/player/Player.gd"
+}, {
+"base": "Unit",
+"class": "Static",
+"language": "GDScript",
+"path": "res://core/unit/static/Static.gd"
+}, {
+"base": "Node2D",
+"class": "Unit",
+"language": "GDScript",
+"path": "res://core/unit/Unit.gd"
+}, {
+"base": "Reference",
+"class": "UnitMeta",
+"language": "GDScript",
+"path": "res://core/unit/UnitMeta.gd"
+} ]
+_global_script_class_icons={
+"HumanBody": "",
+"Movement": "",
+"MultiMap": "",
+"Player": "",
+"Static": "",
+"Unit": "",
+"UnitMeta": ""
+}
+
+[application]
+
+config/name="Sale-deep"
+config/icon="res://icon.png"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
